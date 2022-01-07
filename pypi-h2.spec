@@ -17,13 +17,13 @@ BuildRequires : buildreq-distutils3
 Provides: h2
 Provides: h2-python
 Provides: h2-python3
-BuildRequires : pluggy
+BuildRequires : pypi(pluggy)
 BuildRequires : py-python
 BuildRequires : pypi(hpack)
 BuildRequires : pypi(hyperframe)
 BuildRequires : pytest
 BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(virtualenv)
 
 %description
 =========================
