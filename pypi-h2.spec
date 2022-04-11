@@ -4,7 +4,7 @@
 #
 Name     : pypi-h2
 Version  : 4.1.0
-Release  : 17
+Release  : 18
 URL      : https://files.pythonhosted.org/packages/2a/32/fec683ddd10629ea4ea46d206752a95a2d8a48c22521edd70b142488efe1/h2-4.1.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/2a/32/fec683ddd10629ea4ea46d206752a95a2d8a48c22521edd70b142488efe1/h2-4.1.0.tar.gz
 Summary  : HTTP/2 State-Machine based protocol implementation
@@ -14,16 +14,13 @@ Requires: pypi-h2-license = %{version}-%{release}
 Requires: pypi-h2-python = %{version}-%{release}
 Requires: pypi-h2-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: h2
-Provides: h2-python
-Provides: h2-python3
-BuildRequires : pypi(pluggy)
-BuildRequires : py-python
 BuildRequires : pypi(hpack)
 BuildRequires : pypi(hyperframe)
-BuildRequires : pytest
-BuildRequires : tox
-BuildRequires : pypi(virtualenv)
+BuildRequires : pypi(py)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 
 %description
 =========================
@@ -80,7 +77,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641442053
+export SOURCE_DATE_EPOCH=1649695441
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
